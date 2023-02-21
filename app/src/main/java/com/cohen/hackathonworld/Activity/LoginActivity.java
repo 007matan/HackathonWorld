@@ -37,13 +37,15 @@ public class LoginActivity extends AppCompatActivity {
                 if(user == null){
                     login();
                 }
+
                 String uphone = user.getPhoneNumber();
-                //String uemail = user.getEmail();
+                //String uphone = "+973544443333";
                 Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 intent.putExtra("uphone", uphone);
-                //intent.putExtra("uemail", Integer.valueOf(uemail));
                 startActivity(intent);
                 finish();
+
+
             }
         });
 
@@ -62,10 +64,10 @@ public class LoginActivity extends AppCompatActivity {
     private void login() {
         // Choose authentication providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
-                new AuthUI.IdpConfig.EmailBuilder().build(),
-                new AuthUI.IdpConfig.PhoneBuilder().build(),
-                new AuthUI.IdpConfig.GoogleBuilder().build(),
-                new AuthUI.IdpConfig.TwitterBuilder().build());
+                //new AuthUI.IdpConfig.EmailBuilder().build(),
+                new AuthUI.IdpConfig.PhoneBuilder().build());//,
+                //new AuthUI.IdpConfig.GoogleBuilder().build(),
+                //new AuthUI.IdpConfig.TwitterBuilder().build());
 
 // Create and launch sign-in intent
         Intent signInIntent = AuthUI.getInstance()
