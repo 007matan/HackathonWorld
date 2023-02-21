@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#AAD"
+    tools:context=".Activity.ManagementBoardActivity"
+    android:fillViewport="false">
+
+
+    <LinearLayout
+        android:id="@+id/id_management_board_ll_BL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_TV_BL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:background="#DBB"
+                android:text="Back Log"
+                android:textSize="20sp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/M_B_LST_Task_BL"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_alignTop="@id/id_rad_btn_type"
+                android:layout_toEndOf="@id/id_rad_btn_type"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                app:reverseLayout="true" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/id_plusbtn_BackLog"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="16dp"
+                android:background="#AFF000"
+                app:srcCompat="@drawable/ic_plus">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_TV_TO_DO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="To Do"
+                android:textSize="20sp"
+                android:background="#DBB">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/M_B_LST_Task_TO_DO"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layout_toEndOf="@id/id_rad_btn_type"
+                android:layout_alignTop="@id/id_rad_btn_type"
+                app:reverseLayout="true"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/id_plusbtn_ToDo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="16dp"
+                android:background="#AFF000"
+                app:srcCompat="@drawable/ic_plus">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_TV_IN_PROGRESS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="IN_PROGRESS"
+                android:textSize="20sp"
+                android:background="#DBB">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/M_B_LST_Task_IN_PROGRESS"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layout_toEndOf="@id/id_rad_btn_type"
+                android:layout_alignTop="@id/id_rad_btn_type"
+                app:reverseLayout="true"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/id_plusbtn_InProgress"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="16dp"
+                android:background="#AFF000"
+                app:srcCompat="@drawable/ic_plus">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_TV_DONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="DONE"
+                android:textSize="20sp"
+                android:background="#DBB">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/M_B_LST_Task_DONE"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layout_toEndOf="@id/id_rad_btn_type"
+                android:layout_alignTop="@id/id_rad_btn_type"
+                app:reverseLayout="true"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/id_plusbtn_Done"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="16dp"
+                android:background="#AFF000"
+                app:srcCompat="@drawable/ic_plus">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_TV_OTHER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="OTHER"
+                android:textSize="20sp"
+                android:background="#DBB">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/M_B_LST_Task_OTHER"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layout_toEndOf="@id/id_rad_btn_type"
+                android:layout_alignTop="@id/id_rad_btn_type"
+                app:reverseLayout="true"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/id_plusbtn_Other"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="16dp"
+                android:background="#AFF000"
+                app:srcCompat="@drawable/ic_plus">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

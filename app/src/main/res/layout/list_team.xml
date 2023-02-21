@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginHorizontal="25dp"
+    android:background="#BAD223"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/id_tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*team name*">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <Button
+            android:id="@+id/id_btn_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_team_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="choose">
+
+        </Button>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "580635010793",
+    "firebase_url": "https://hackathonworld-f9197-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "hackathonworld-f9197",
+    "storage_bucket": "hackathonworld-f9197.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580635010793:android:308546834da0b33fee7278",
+        "android_client_info": {
+          "package_name": "com.cohen.hackathonworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580635010793-6tr2eq23je1rcn200d787df2lrc5i9si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn80C1TcTdYSk5yO1RZU-qn1sMFC9oOp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580635010793-6tr2eq23je1rcn200d787df2lrc5i9si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

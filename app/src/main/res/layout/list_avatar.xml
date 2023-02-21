@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id_cv_name"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#DDD000"
+        app:cardCornerRadius="30dp">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/id_imgbtn_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:paddingTop="10dp"
+            android:background="#AA5"
+            android:src="@drawable/img_avatar_itachi">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/id_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_cv_name"
+        android:text="*name*">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/id_tv_userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tv_name"
+        android:text="*userID*">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+</RelativeLayout>

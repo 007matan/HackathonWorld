@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyTasksFragment">
+
+    <TextView
+        android:id="@+id/id_txt_my_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Tasks"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/id_rad_btn_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/id_txt_my_tasks"
+        android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/id_myTasks_radbtn_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="All">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/id_myTasks_radbtn_BL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BACKLOG">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/id_myTasks_radbtn_ToDo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TO_DO">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/id_myTasks_radbtn_InPrg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="IN_PROGRESS">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/id_myTasks_radbtn_Done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DONE">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/id_myTasks_radbtn_Other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="OTHER">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_myTasks_chooseType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose"
+            android:layout_marginStart="20dp"
+            android:background="#0099AC">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myTask_LST_Task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:layout_toEndOf="@id/id_rad_btn_type"
+        android:layout_alignTop="@id/id_rad_btn_type"
+        app:reverseLayout="true"/>
+
+    <TextView
+        android:id="@+id/id_tv_invisible_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/id_rad_btn_type">
+    </TextView>
+    <TextView
+        android:id="@+id/id_tv_invisible_projectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/id_tv_invisible_phonenumber">
+    </TextView>
+
+
+
+
+</RelativeLayout>

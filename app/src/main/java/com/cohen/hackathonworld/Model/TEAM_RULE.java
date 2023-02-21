@@ -1,0 +1,16 @@
+package com.cohen.hackathonworld.Model;
+
+public enum TEAM_RULE {
+    ACCOMPANY,
+    PRODUCT_MANAGER,
+    TEAM_LEAD,
+    ENGINEERING_MANAGER,
+    SOFTWARE_ARCHITECT,
+    SOFTWARE_DEVELOPERS,
+    UX_UI_DESIGNERS,
+    QA_ENGINEER,
+    BUSINESS_ANALYST,
+    SCRUM_MASTER,
+    TESTERS,
+    OTHER
+}
