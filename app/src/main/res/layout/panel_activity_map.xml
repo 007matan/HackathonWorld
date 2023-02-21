@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:screenOrientation="portrait"
+    android:keepScreenOn="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/img_homepage_back">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="#0F0">
+
+        <FrameLayout
+            android:id="@+id/panel_LAY_map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#0CCFCC"
+            android:layout_weight="1"></FrameLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
