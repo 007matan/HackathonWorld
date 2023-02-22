@@ -164,6 +164,14 @@ public class HomeScreenFragment extends Fragment implements Adapter_Team.TeamVie
                 startActivity(intent);
             }
         });
+
+        binding.idBtnHackathonmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MapActivityPanel.class);
+                startActivity(intent);
+            }
+        });
     }
     public void RequestUserByIdentifier(){
         Intent intent = getActivity().getIntent();

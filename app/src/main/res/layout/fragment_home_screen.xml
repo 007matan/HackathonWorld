@@ -225,6 +225,7 @@ android:id="@+id/id_img_avatar"
                 android:layout_weight="1"
                 app:cardCornerRadius="40dp">
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/id_btn_hackathonmap"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Hackathon Map"
