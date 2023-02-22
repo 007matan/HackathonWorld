@@ -54,19 +54,6 @@ public class MapFragment extends Fragment {
             @Override
             public void onMapReady(GoogleMap googleMap) {
                 MapFragment.this.googleMap = googleMap;
-                //
-                LatLng sydney = new LatLng(-30, 150);
-                // Initialize marker options
-                MarkerOptions markerOptions=new MarkerOptions();
-                // Set position of marker
-                markerOptions.position(sydney);
-                // Set title of marker
-                markerOptions.title("Marker in Sydney");
-                // Animating to zoom the marker
-                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney,5));
-                // Add marker on map
-                //googleMap.addMarker(markerOptions);
-                //
             }
         });
 
@@ -78,16 +65,13 @@ public class MapFragment extends Fragment {
     }
     public void markerLocationUI(double lat, double log, String className){
         LatLng location = new LatLng(lat, log);
-        //mMap.addMarker(new MarkerOptions().position(location).title("Place number: "+place ));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
         // Initialize marker options
         MarkerOptions markerOptions=new MarkerOptions();
         // Set position of marker
         markerOptions.position(location);
         // Set title of marker
         markerOptions.title(className);
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location,5));
-        // Add marker on map
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location,17));
         googleMap.addMarker(markerOptions);
     }
 
