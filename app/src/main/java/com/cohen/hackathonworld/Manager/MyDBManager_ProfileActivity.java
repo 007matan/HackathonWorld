@@ -93,7 +93,7 @@ public class MyDBManager_ProfileActivity {
                                     .withTeamAccompanyName(i.child("fullName").getValue(String.class))
                                     .withTeamAccompanyTeamsList(i.child("teamList").getValue(IDsList.class).getIds())
                                     .withTeamAccompanyAvatar(i.child("avatar").getValue(String.class))
-                                    .withTeamAccompanyEmailAddress(i.child("fullName").getValue(String.class))
+                                    .withTeamAccompanyEmailAddress(i.child("emailAddress").getValue(String.class))
                                     .withTeamAccompanyMotherClassroom(i.child("classroomId").getValue(Integer.class))
                                     .withTeamAccompanyPhoneNumber(i.child("phoneNumber").getValue(String.class))
                                     .withTeamAccompanyRule()

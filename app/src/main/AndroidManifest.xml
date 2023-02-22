@@ -39,9 +39,6 @@
             android:name=".Activity.DataManagerActivity"
             android:label="HomePage" />
         <activity
-            android:name=".Activity.HomepageActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activity.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_main"

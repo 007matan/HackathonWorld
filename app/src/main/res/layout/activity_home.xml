@@ -120,6 +120,7 @@
             android:layout_height="wrap_content"
             android:text="Add new taskNOTLegal"
             android:background="#AA4AFF"
+            android:enabled="false"
             android:layout_marginTop="20dp"
             android:layout_weight="1">
 

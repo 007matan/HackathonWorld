@@ -50,8 +50,15 @@ public class AddChatActivity extends AppCompatActivity implements Adapter_Team.T
         id_btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddChatActivity.this, HomeActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(AddChatActivity.this, HomeActivity.class);
+                //startActivity(intent);
+                finish();
+            }
+        });
+
+        id_btn_enter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
             }
         });
